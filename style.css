@@ -1,0 +1,482 @@
+body {
+    font-family: "League Spartan", sans-serif;
+}
+
+.logo{
+    width: 100px;
+}
+
+
+
+nav {
+    background: #e7e6e6;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu li {
+
+    list-style: none;
+    position: relative;
+
+
+}
+
+.menu li a {
+
+    font-weight: 500;
+    text-decoration: none;
+    color: #767676;
+    transition: .5s;
+    display: inline-block;
+
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    border-radius: 6px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #9888f5;
+    transition: .5s;
+
+}
+
+.menu li a:hover::after {
+    width: 100%;
+
+}
+
+.dropdown_Menu {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    padding: 0px;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    box-shadow: 0px 0px 5px 0px #afacac;
+    margin: 0;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+
+
+
+.four {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background: blue;
+    padding: 15px 10px;
+    text-align: center;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+
+
+.menu li:hover .dropdown_Menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.navBtn {
+    background: white;
+    color: blue;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: transparent;
+    position: relative;
+    z-index: 9;
+    transition: .5s;
+}
+
+.navBtn::after {
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #9888f5;
+    z-index: -1;
+    transition: .5s;
+
+
+}
+
+.navBtn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.navBtn:hover {
+    color: white;
+}
+
+
+
+.banner {
+    background: #edf6ff;
+}
+
+.bannerContainer{
+    max-width: 1356px;
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+.bannerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bannerText {
+   
+}
+
+.bannerText h1 {
+    max-width: 575px;
+}
+
+
+.bannerText p {
+    max-width: 530px;
+    margin: 20px 0px;
+    color: #999999;
+
+}
+
+.bannerBtn {
+    background: #016eff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+
+
+.bannerBtn:hover {
+    background: white;
+    color: #016eff;
+    border: 1px solid #016eff;
+}
+
+
+
+
+.hero {
+    width: 600px;
+    height: 530px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 999;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.heroImg {
+    position: absolute;
+    top: -79px;
+    right: -139px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+
+
+
+
+
+
+
+
+.textContent h6 {
+    color: #a497ed;
+}
+
+.textContent h1 {
+    font-weight: 700;
+    max-width: 700px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.heading::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background: #5252f0;
+    position: absolute;
+    bottom: -8px;
+    left: 3px;
+}
+
+
+.textContent p {
+    max-width: 580px;
+    color: #999999;
+}
+
+
+.cardContainer {
+
+    display: flex;
+    gap: 20px;
+    margin: 40px 0px 60px 0px;
+
+}
+
+.serviceBG {
+    padding-bottom: 1px;
+    margin: auto;
+    width: 1380px;
+    background: url('https://i.postimg.cc/CMmpZmWL/service-patern.png') no-repeat bottom left;
+}
+
+.cardContainer h6 {
+    padding: 15px 20px 15px 0px;
+}
+
+.cardContainer span {
+    font-size: 25px;
+    background: #5252f0;
+    color: white;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 30px 30px 30px 0px;
+    transition: all .5s ease-in-out;
+    position: relative;
+}
+
+
+.card {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px #cdc8c8;
+    transition: all .5s ease-in-out;
+}
+
+.card span::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #5252f0;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: all .5s ease-in-out;
+}
+
+.card h6 {
+    font-weight: 600;
+}
+
+.card p {
+    color: #999999;
+    margin-top: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    background: #5252f0;
+    color: white;
+}
+
+.card:hover span::after {
+    background: white;
+    width: 45px;
+}
+
+.card:hover span {
+    background: white;
+    color: #5252f0;
+}
+
+.card:hover p {
+    color: white;
+}
+
+.experience {
+    background: url(https://i.postimg.cc/Pxzbf6rm/video-bg.jpg) no-repeat center center rgb(72 82 109);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+}
+
+
+
+
+.exContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-bottom: 200px;
+    margin-top: 40px;
+}
+
+
+.exContainer h3 {
+    position: relative;
+}
+
+
+.exContainer h3::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.exContainer p {
+    max-width: 400px;
+    margin: 20px 0px 60px 0px;
+}
+
+.playBtn {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: white;
+    font-size: 20px;
+    color: #5252f0;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.playBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: animateBTN 1.6s ease-out infinite;
+}
+
+.playBtn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 50%;
+    animation: animateBTN2 1.6s ease-out infinite;
+}
+
+
+
+
+@keyframes animateBTN {
+
+    0% {
+        transform: scale(1.3);
+    }
+
+    25% {
+        transform: scale(1.6);
+    }
+
+    50% {
+        transform: scale(1.8);
+        opacity: .7;
+    }
+
+    75% {
+        transform: scale(2.1);
+        opacity: .5;
+    }
+
+    100% {
+        transform: scale(2.4);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+
+@keyframes animateBTN2 {
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: .7;
+    }
+
+    75% {
+        transform: scale(1.7);
+        opacity: .5;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}
+
+
+
+
+
+
